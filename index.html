@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .menu-item:hover {
+            background-color: #e5e7eb; /* Tailwind's gray-200 */
+        }
+        .menu-item span:hover {
+            background-color: #dbeafe; /* Tailwind's blue-100 */
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+
+<div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-xs md:max-w-sm">
+    <h1 class="text-xl font-bold mb-4">123done</h1>
+    <button class="bg-blue-600 text-white py-2 px-4 rounded-lg mb-4 w-full flex items-center justify-center hover:bg-blue-700">
+        <i class="fas fa-plus mr-2"></i> Create new...
+    </button>
+    <ul class="space-y-4">
+        <li class="flex items-center text-lg text-gray-700 menu-item p-2 rounded-lg">
+            <i class="fas fa-home mr-3 text-blue-500"></i>
+            <span class="bg-blue-100 px-2 py-1 rounded-lg">Dashboard</span>
+        </li>
+        <li class="flex items-center text-lg text-gray-700 menu-item p-2 rounded-lg">
+            <i class="fas fa-exchange-alt mr-3"></i>
+            Transfers
+        </li>
+        <li class="flex items-center text-lg text-gray-700 menu-item p-2 rounded-lg">
+            <i class="fas fa-th-large mr-3"></i>
+            My Apps
+        </li>
+        <li class="flex items-center text-lg text-gray-700 menu-item p-2 rounded-lg">
+            <i class="fas fa-history mr-3"></i>
+            History
+        </li>
+        <li class="flex items-center text-lg text-gray-700 menu-item p-2 rounded-lg">
+            <i class="fas fa-globe mr-3"></i>
+            Explore
+        </li>
+        <li class="flex items-center text-lg text-gray-700 menu-item p-2 rounded-lg">
+            <i class="fas fa-question-circle mr-3"></i>
+            Get Help
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
